@@ -3,13 +3,14 @@
 ## Task 2 — Clean the Data & Save as CSV
 
 ### 1 — Load the JSON File
-"""
+
 # import Required Library
 import pandas as pd
 import json
 
 # Load the JSON File
-with open ("/content/data/trends_20260404.json" , "r") as f :
+
+with open ("data/trends_20260405.json" , "r",encoding="utf-8") as f :
   post_list = json.load(f)
 story_list = pd.DataFrame(post_list)
 story_list

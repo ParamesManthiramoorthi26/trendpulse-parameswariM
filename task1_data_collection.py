@@ -63,9 +63,8 @@ def fetch_story(story_id, retries=1):
                 return res.json()
         except requests.exceptions.RequestException as e:
             print(f"Error for ID {story_id}: {e}, retrying...")
-            time.sleep(1)
+            time.sleep(2)
     return None
-
 
 # -----------------------------
 # Main loop to fetch stories
@@ -73,7 +72,6 @@ for id in storyids:
     story = fetch_story(id, retries=1)
     if not story or story.get("type") != "story":
         continue
-
 
     title = story.get("title", "")
     category = assign_category(title)

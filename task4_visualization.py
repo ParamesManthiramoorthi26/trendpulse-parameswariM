@@ -9,9 +9,13 @@ import seaborn as sns
 import os
 
 """### 1 — Setup"""
+import pandas as pd 
+import os
+import matplotlib.pyplot as plt
+import seaborn as sns   
 
 # Load data
-csv_path = "/content/sample_data/Data/trends_analysed.csv"
+csv_path = "Data/trends_analysed.csv"
 story_data = pd.read_csv(csv_path)
 story_data.head()
 

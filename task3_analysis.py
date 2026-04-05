@@ -9,9 +9,10 @@ import os
 from datetime import datetime
 
 """### 1 — Load and Explore"""
-
+import pandas as pd
+import os
 # Load data/trends_clean.csv into a Pandas DataFrame
-story_clean = "/content/data/story_list_20260404_103059.csv"
+story_clean = "data/story_list_clean_20260405_184858.csv"
 story_df = pd.read_csv(story_clean)
 story_df
 
