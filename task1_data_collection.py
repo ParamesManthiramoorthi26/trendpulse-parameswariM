@@ -66,15 +66,14 @@ def fetch_story(story_id, retries=1):
             time.sleep(1)
     return None
 
-<<<<<<< HEAD
-=======
+
 # -----------------------------
 # Main loop to fetch stories
 for id in storyids:
     story = fetch_story(id, retries=1)
     if not story or story.get("type") != "story":
         continue
->>>>>>> 71858da (Update TrendPulse pipeline: task1-4 code, new outputs, dashboard and charts)
+
 
     title = story.get("title", "")
     category = assign_category(title)
