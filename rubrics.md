@@ -6,56 +6,75 @@ This document outlines the grading criteria for each task in the TrendPulse proj
 
 ## Task 1 – Data Collection
 
-**Objective:** Collect Hacker News posts using the API and save them as JSON.
+**Objective:** Fetch top Hacker News posts using the API, categorize by keywords, and save as JSON.
 
 **Grading Criteria:**
 - Script runs without errors
-- Fetches at least 100 posts
-- All required fields present: Post_id, title, author, score, num_comments, category, collected_at
+- Fetches top 500 posts (or all available) and collects up to 25 per category
+- Assigns category safely using keywords
+- Handles failed requests and retries
+- Adds `collected_at` timestamp
 - JSON saved in `data/` folder
-- Code is clean and commented
+- Code is clean, readable, and commented
 
 ---
 
 ## Task 2 – Data Processing
 
-**Objective:** Load Task 1 JSON, clean the data, and save as CSV.
+**Objective:** Load Task 1 JSON, clean the data, handle missing values, standardize columns, and save as CSV.
 
 **Grading Criteria:**
 - Script runs without errors
 - JSON loaded correctly
-- Missing values handled, duplicates removed
-- Columns standardized (`category`, `title`, `author`)
-- CSV saved in `data/` folder
+- Missing values handled and duplicates removed
+- Columns standardized: `category`, `title`, `author`, `score`, `num_comments`
+- Output CSV saved in `data/` folder
 - Code is clean and readable
 
 ---
 
 ## Task 3 – Data Analysis
 
-**Objective:** Analyze cleaned data using Pandas & NumPy, add new analytical columns, save CSV.
+**Objective:** Analyze cleaned data using Pandas & NumPy, compute statistics, add new columns, and save for Task 4.
 
 **Grading Criteria:**
 - Script runs without errors
-- New columns added (e.g., `score_per_comment`)
-- Category-level analysis (count, total score, total comments)
-- Post-level analysis (highest score, most comments, highest/lowest score per comment)
-- Author-level analysis (most posts, highest average score)
-- CSV saved in `data/` folder
-- Code is clean and readable
+- Loads `data/trends_clean.csv` correctly
+- Prints first 5 rows and shape of the DataFrame
+- Prints average score and average num_comments
+- Uses NumPy to calculate:
+  - Mean, median, and standard deviation of `score`
+  - Maximum and minimum `score`
+  - Category with most stories
+  - Story with most comments (title and comment count)
+- Adds two new columns:
+  - `Engagement = num_comments / (score + 1)` (discussion per upvote)
+  - `Is_popular = True if score > average score, else False`
+- Saves updated DataFrame to `data/trends_analysed.csv`
+- Prints confirmation message after saving
+- Code is commented, readable, and uses NumPy for calculations
 
 ---
 
 ## Task 4 – Data Visualization & Dashboard
 
-**Objective:** Create charts and a dashboard PNG for visual insights.
+**Objective:** Create visual insights from analyzed data, including individual charts and a combined dashboard.
 
 **Grading Criteria:**
 - Script runs without errors
-- Charts created: top posts, posts per category, scatter plot
-- Dashboard created with 4 KPIs + 4 charts
-- Titles, labels, legends, borders added
-- Charts and dashboard saved in `outputs/` folder
+- Charts created:
+  - Top 10 stories by score (horizontal bar chart)
+  - Stories per category (bar chart)
+  - Score vs num_comments (scatter plot with popular vs non-popular coloring)
+- Dashboard created:
+  - Layout: top-left top story chart, top-right posts per category, bottom scatter plot
+  - Overall title: "TrendPulse Dashboard"
+  - Saved as `outputs/dashboard.png`
+- Charts saved individually in `outputs/` folder:
+  - `chart1_top_stories.png`
+  - `chart2_categories.png`
+  - `chart3_scatter.png`
+- Titles, axis labels, legends, and borders added
 - Code is clean and readable
 
 ---
@@ -67,8 +86,8 @@ Use this section to ensure all tasks are complete and meet the grading criteria.
 ### Task 1 – Data Collection
 - [x] `task1_data_collection.py` runs without errors
 - [x] JSON file saved in `data/` folder
-- [x] At least 100 posts collected
-- [x] Each post has all required fields
+- [x] Top posts collected (up to 25 per category)
+- [x] Each post has all required fields: Post_id, title, author, score, num_comments, category, collected_at
 - [x] Code is commented and readable
 
 ### Task 2 – Data Processing
@@ -80,18 +99,19 @@ Use this section to ensure all tasks are complete and meet the grading criteria.
 
 ### Task 3 – Data Analysis
 - [x] `task3_analysis.py` runs without errors
-- [x] New analytical columns added
-- [x] Category-level analysis completed
-- [x] Post-level analysis completed
-- [x] Author-level analysis completed
-- [x] Output CSV saved in `data/` folder
+- [x] First 5 rows and DataFrame shape printed
+- [x] Average score and average num_comments printed
+- [x] NumPy used to calculate mean, median, std, max, min, most stories, most commented story
+- [x] `Engagement` and `Is_popular` columns added correctly
+- [x] `data/trends_analysed.csv` saved
+- [x] Code is commented and readable
 
 ### Task 4 – Data Visualization & Dashboard
 - [x] `task4_visualization.py` runs without errors
-- [x] Charts created: top posts, posts per category, scatter plot
-- [x] Dashboard created with 4 KPIs and 4 charts
+- [x] Individual charts created:
+  - Top 10 stories by score
+  - Posts per category
+  - Score vs num_comments scatter plot
+- [x] Dashboard created with top-left, top-right, and bottom chart layout
 - [x] Charts and dashboard saved in `outputs/` folder
 - [x] Titles, labels, legends, borders added
-
----
-
