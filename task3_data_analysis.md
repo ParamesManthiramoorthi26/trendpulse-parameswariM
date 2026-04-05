@@ -1,44 +1,69 @@
 # Task 3 – Data Analysis with Pandas & NumPy
 
-## Overview
-In Task 3, we analyze the cleaned Hacker News dataset produced in Task 2. The main objective is to extract insights from the data using **Pandas** and **NumPy**, add new analytical columns, and save the results as a CSV file for further exploration.
+**Project:** TrendPulse — What's Actually Trending Right Now  
+---
 
-> **Note:** The input for this task is the CSV file generated in Task 2 (`story_list_YYYYMMDD_HHMMSS.csv`).
+## Objective
+The goal of Task 3 is to **analyze the cleaned dataset from Task 2** using Pandas and NumPy.  
+This includes exploring the data, calculating statistics, identifying trends, and adding new analytical columns.  
+The final result is saved as a new CSV file for further visualization in Task 4.
 
-## Steps Performed
+---
 
-### 1. Load the Cleaned CSV
-- The CSV from Task 2 is loaded into a Pandas DataFrame.
-- The `collected_at` column is converted to datetime for time-based analysis.
+## Input
+- Cleaned CSV file from Task 2:  
+  `data/trends_clean.csv`  
+- Contains fields:  
+  `Post_id`, `title`, `author`, `score`, `num_comments`, `category`, `collected_at`
 
-### 2. Basic Data Checks
-- Checked DataFrame shape, column types, and missing values.
-- Verified data integrity after loading.
+---
 
-### 3. Category Analysis
-- Count of posts per category.
-- Total score per category.
-- Total number of comments per category.
+## Tasks
 
-### 4. Post-Level Analysis
-- Identified the post with the **highest score**.
-- Identified the post with the **most comments**.
-- Calculated a new column **score per comment** (`score ÷ num_comments`) for each post.
-- Found posts with the **highest** and **lowest** score per comment.
+### 1 — Load and Explore (4 marks)
+- Load the CSV file into a Pandas DataFrame  
+- Display the first 5 rows  
+- Print the shape of the DataFrame (rows and columns)  
+- Calculate and print:
+  - Average score  
+  - Average number of comments  
 
-### 5. Author Analysis
-- Identified the author with the **most posts**.
-- Identified the author with the **highest average post score**.
+---
 
-### 6. Saving Results
-- The DataFrame, including the new column `score_per_comment`, is saved as a CSV for reporting or further analysis.
+### 2 — Basic Analysis with NumPy (8 marks)
+Perform statistical analysis on the dataset:
+- Calculate:
+  - Mean score  
+  - Median score  
+  - Standard deviation of score  
+- Identify:
+  - Highest score  
+  - Lowest score  
+- Find:
+  - Category with the most stories  
+  - Story with the highest number of comments (print title and comment count)  
 
-## Insights Extracted
-- Categories like **Entertainment** and **Technology** have the highest number of posts.
-- Posts with the highest score or comment engagement can be easily identified for trending content analysis.
-- **score_per_comment** helps determine posts with high impact relative to discussion.
-- Top authors are identified both by post count and average post score, highlighting active and influential contributors.
+---
 
-## Output
-- A CSV file with all posts, new analytical columns, and ready-to-use for visualization or reporting.
-- Key metrics for categories, posts, and authors.
+### 3 — Add New Columns (5 marks)
+Add the following calculated columns:
+
+- **Engagement**  
+  - Formula: `num_comments / (score + 1)`  
+  - Represents how much discussion a story generates per upvote  
+
+- **Is_popular**  
+  - True if `score > average score`, otherwise False  
+  - Helps identify above-average performing stories  
+
+---
+
+### 4 — Save the Result (3 marks)
+- Save the updated DataFrame to:  
+  `data/trends_analysed.csv`  
+- Print a confirmation message with:
+  - Number of rows  
+  - Number of columns  
+
+---
+

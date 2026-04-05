@@ -1,37 +1,51 @@
-# Task 2 – Data Processing
+# Task 2 — Clean the Data & Save as CSV
+---
 
 ## Objective
-The goal of this task is to process and clean the raw data collected from Hacker News in **Task 1**. The JSON file generated in Task 1 serves as the input for this task. The data is cleaned and saved as a CSV file for further analysis.
+The raw JSON data from Task 1 may have messy entries — duplicates, missing values, wrong data types, extra whitespace, or low-quality posts.  
 
-## Steps Performed
+The goal of Task 2 is to **load the JSON into a Pandas DataFrame, clean it, remove low-quality stories, and save it as a tidy CSV file** for further analysis.
 
-1. **Load JSON Data**
-   - The JSON file containing Hacker News stories collected in Task 1 is read into a Pandas DataFrame.
+---
 
-2. **Data Cleaning & Transformation**
-   - Convert the `collected_at` column to a `datetime` datatype for proper time-based handling.
-   - Check for and handle any missing values or duplicate rows.
-   - Standardize text columns:
-     - Remove extra spaces from `title`, `author`, and `category`.
-     - Ensure consistent capitalization in `category`.
+## Input
+- JSON file from Task 1:  
+  `data/trends_YYYYMMDD.json`  
+- Contains posts with fields:  
+  `Post_id`, `title`, `author`, `score`, `num_comments`, `category`, `collected_at`.
 
-3. **Save Cleaned Data**
-   - The cleaned DataFrame is saved as a CSV file in the `data/` folder.
-   - The filename includes a timestamp to ensure versioning and easy identification, e.g., `data/story_list_YYYYMMDD_HHMMSS.csv`.
+---
 
-## Output
-- A cleaned CSV file with the following columns:
-  1. `Post_id` – Unique ID of the story.
-  2. `title` – Story title.
-  3. `author` – Username of the poster.
-  4. `score` – Number of upvotes.
-  5. `num_comments` – Number of comments.
-  6. `category` – Category assigned based on keywords.
-  7. `collected_at` – Date and time when the story was collected.
+## Tasks
 
-- This CSV dataset is now ready for **Task 3 – Data Analysis**.
+### 1 — Load the JSON File (4 marks)
+- Load the JSON into a Pandas DataFrame.  
+- Print the number of rows and columns loaded.  
+- Preview the first and last 5 rows.
 
-## Notes
-- The `data/` folder is automatically created if it does not exist.
-- The cleaning ensures consistency, no missing values, and no duplicates.
-- **Task 1 output (JSON file) is the input for this task**, ensuring a seamless workflow.
+### 2 — Clean the Data (10 marks)
+Fix the following issues:
+- **Duplicates:** Remove rows with the same `Post_id`.  
+- **Missing values:** Drop rows where `Post_id`, `title`, or `score` is missing.  
+- **Data types:** Ensure `score` and `num_comments` are integers.  
+- **Low quality:** Remove stories with `score < 5`.  
+- **Whitespace:** Strip extra spaces from `title`, `author`, and `category`.  
+- Convert `collected_at` to datetime.  
+- Print the number of rows remaining after cleaning.
+
+### 3 — Save as CSV (6 marks)
+- Save the cleaned DataFrame to:  
+  `data/trends_clean.csv`  
+- Print a confirmation message with the number of rows saved.  
+- Print a summary showing how many stories per category remain.
+
+---
+
+## Submission Checklist
+- [x] Script runs without errors  
+- [x] `data/trends_clean.csv` exists  
+- [x] Console shows row count at each step (load, duplicates removed, nulls removed, low-score removed)  
+- [x] Stories-per-category summary is printed  
+- [x] Code is commented and readable  
+
+---
