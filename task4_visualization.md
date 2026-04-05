@@ -50,6 +50,7 @@ The goal is to provide insights into trending HackerNews stories across categori
   - **Bottom:** Scatter plot spanning full width  
 - Added overall title: `"TrendPulse Dashboard"`  
 - Saved as: `outputs/dashboard.png`
+  
 ![TrendPulse Dashboard](outputs/dashboard.png)
 
 ---
