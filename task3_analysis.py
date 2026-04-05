@@ -12,7 +12,7 @@ from datetime import datetime
 import pandas as pd
 import os
 # Load data/trends_clean.csv into a Pandas DataFrame
-story_clean = "data/story_list_clean_20260405_184858.csv"
+story_clean = "data/story_list_clean_latest.csv"
 story_df = pd.read_csv(story_clean)
 story_df
 

@@ -104,15 +104,21 @@ for id in storyids:
 # Make sure 'data/' folder exists
 os.makedirs("data", exist_ok=True)
 
-# Save to JSON with current date
-today_str = datetime.now().strftime("%Y%m%d")
-filename = f"data/trends_{today_str}.json"
+# Save to JSON with current date + timestamp
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+filename = f"data/trends_{timestamp}.json"
 
 with open(filename, "w", encoding="utf-8") as f:
+    json.dump(all_story, f, ensure_ascii=False, indent=2)
+
+# Also save/update a fixed 'latest' file for pipeline
+latest_file = "data/trends_latest.json"
+with open(latest_file, "w", encoding="utf-8") as f:
     json.dump(all_story, f, ensure_ascii=False, indent=2)
 
 # -----------------------------
 # Print summary
 print(f"{filename} created successfully")
+print(f"{latest_file} updated successfully")
 print(f"Total posts collected: {len(all_story)}")
 print("Posts per category:", category_counts)

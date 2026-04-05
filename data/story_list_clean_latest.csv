@@ -1,0 +1,110 @@
+Post_id,title,author,score,num_comments,category,collected_at
+47649721,Artemis II crew see first glimpse of far side of Moon [video],mooreds,44,12,Other,2026-04-05 15:44:18
+47648828,"Eight years of wanting, three months of building with AI",brilee,90,18,Technology,2026-04-05 15:44:19
+47647455,"A Claude Code skill that makes Claude talk like a caveman, cutting token use",tosh,310,200,Technology,2026-04-05 15:44:19
+47649113,Finnish sauna heat exposure induces stronger immune cell than cytokine responses,Growtika,122,62,Worldnews,2026-04-05 15:44:19
+47649117,Someone at BrowserStack Is Leaking Users' Email Address,m_km,236,59,Technology,2026-04-05 15:44:19
+47649811,"Japanese, French and Omani Vessels Cross Strait of Hormuz",vrganj,63,21,Technology,2026-04-05 15:44:20
+47647788,The threat is comfortable drift toward not understanding what you're doing,zaikunzhang,491,357,Worldnews,2026-04-05 15:44:20
+47646843,Lisette a little language inspired by Rust that compiles to Go,jspdown,176,87,Other,2026-04-05 15:44:20
+47648048,Friendica – A Decentralized Social Network,janandonly,51,15,Other,2026-04-05 15:44:21
+47640728,Show HN: A game where you build a GPU,Jaso1024,853,170,Technology,2026-04-05 15:44:21
+47649148,Iguanaworks has closed and our products are no longer sold,ripe,61,7,Other,2026-04-05 15:44:21
+47644406,German implementation of eIDAS will require an Apple/Google account to function,DyslexicAtheist,447,393,Worldnews,2026-04-05 15:44:21
+47648404,My Google Workspace account suspension,zenincognito,165,72,Worldnews,2026-04-05 15:44:22
+47595695,OpenScreen is an open-source alternative to Screen Studio,jskopek,388,67,Other,2026-04-05 15:44:22
+47612331,Baby's Second Garbage Collector,matheusmoreira,7,0,Other,2026-04-05 15:44:29
+47645432,Introduction to Computer Music (2009) [pdf],luu,193,59,Technology,2026-04-05 15:44:29
+47649917,"SPF/PC v4 for MS-DOS, FreeDOS, x86",hggh,10,3,Other,2026-04-05 15:44:30
+47646472,Aegis – open-source FPGA silicon,rosscomputerguy,84,8,Other,2026-04-05 15:44:30
+47608040,Shared mutable state in Rust (2022),vinhnx,24,5,Other,2026-04-05 15:44:30
+47650401,StackOverflow: Retiring the Beta Site,stefankuehnel,5,1,Other,2026-04-05 15:44:30
+47648438,Common drug tests lead to tens of thousands wrongful arrests a year,rawgabbit,66,26,Other,2026-04-05 15:44:31
+47607408,Scientists Figured Out How Eels Reproduce (2022),thunderbong,69,11,Other,2026-04-05 15:44:31
+47640875,"LLM Wiki – example of an ""idea file""",tamnd,253,77,Technology,2026-04-05 15:44:31
+47646504,Show HN: OsintRadar – Curated directory for osint tools,lexalizer,40,5,Entertainment,2026-04-05 15:44:32
+47642569,How many products does Microsoft have named 'Copilot'?,gpi,742,350,Other,2026-04-05 15:44:32
+47587089,"Zml-smi: universal monitoring tool for GPUs, TPUs and NPUs",steeve,68,11,Technology,2026-04-05 15:44:32
+47598835,Rubysyn: Clarifying Ruby's Syntax and Semantics,petalmind,65,14,Other,2026-04-05 15:44:33
+47639303,"Show HN: I made open source, zero power PCB hackathon badges",kaipereira,142,12,Entertainment,2026-04-05 15:44:33
+47642601,Show HN: M. C. Escher spiral in WebGL inspired by 3Blue1Brown,laszlokorte,135,20,Entertainment,2026-04-05 15:44:33
+47644864,"AWS engineer reports PostgreSQL perf halved by Linux 7.0, fix may not be easy",crcastle,367,113,Other,2026-04-05 15:44:40
+47613118,Show HN: I built a small app for FSI German Course,syedmsawaid,45,13,Entertainment,2026-04-05 15:44:40
+47638810,Components of a Coding Agent,MindGods,269,83,Other,2026-04-05 15:44:41
+47639779,"Show HN: sllm – Split a GPU node with other developers, unlimited tokens",jrandolf,171,85,Technology,2026-04-05 15:44:41
+47645305,Demonstrating Real Time AV2 Decoding on Consumer Laptops,breve,46,13,Other,2026-04-05 15:44:41
+47639291,The Indie Internet Index – submit your favorite sites,freshman_dev,177,32,Other,2026-04-05 15:44:41
+47614532,Ruckus: Racket for iOS,nsm,149,14,Other,2026-04-05 15:44:42
+47604887,Electrical transformer manufacturing is throttling the electrified future,toomuchtodo,103,100,Other,2026-04-05 15:44:42
+47640380,Apple approves driver that lets Nvidia eGPUs work with Arm Macs,naves,462,209,Technology,2026-04-05 15:44:42
+47637757,Embarrassingly simple self-distillation improves code generation,Anon84,620,187,Technology,2026-04-05 15:44:43
+47650022,Banray.eu: Raising awareness of the terrible idea that is always-on AI glasses,ChrisArchitect,18,4,Technology,2026-04-05 15:44:43
+47646363,Modern Generic SVGA driver for Windows 3.1,userbinator,62,15,Other,2026-04-05 15:44:43
+47645468,Writing Lisp is AI resistant and I'm sad,djha-skin,72,77,Technology,2026-04-05 15:44:44
+47633396,Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw,firloop,1060,802,Technology,2026-04-05 15:44:44
+47644566,"Advice to young people, the lies I tell myself (2024)",mooreds,138,42,Worldnews,2026-04-05 15:44:44
+47609117,Ask HN: Is there any interest in a native Qt/C++ Discord client?,txtsd,23,22,Other,2026-04-05 15:44:45
+47645025,"Show HN: Contrapunk – Real-time counterpoint harmony from guitar input, in Rust",waveywaves,82,36,Worldnews,2026-04-05 15:44:45
+47648801,The Hormuz Hypothesis – What If the U.S. Navy Isn't in a Hurry to Reopen Hormuz?,jgalt212,10,16,Other,2026-04-05 15:44:45
+47646065,What if the browser built the UI for you?,jonnonz,37,58,Other,2026-04-05 15:44:45
+47648529,Right to repair: Why the US military can't fix much of its own equipment,scythe,11,4,Technology,2026-04-05 15:44:46
+47631118,Artemis II crew take “spectacular” image of Earth,andsoitis,1049,359,Other,2026-04-05 15:44:46
+47646566,"Unverified: What Practitioners Post About OCR, Agents, and Tables",chelm,20,10,Worldnews,2026-04-05 15:44:47
+47606244,Training mRNA Language Models Across 25 Species for $165,maziyar,144,33,Technology,2026-04-05 15:44:47
+47648452,Ubuntu now requires more RAM than Windows 11,jnord,127,140,Worldnews,2026-04-05 15:44:47
+47590230,Costco sued for seeking refunds on tariffs customers paid,AdmiralAsshat,76,67,Technology,2026-04-05 15:44:48
+47648226,SpaceX and OpenAI: The Mega IPO Grift [video],throw0101c,14,6,Technology,2026-04-05 15:44:49
+47610593,Elizabeth I's Manuscript of Pierre Boaistuau's Histoires Prodigieuses (1559),benbreen,5,1,Technology,2026-04-05 15:44:49
+47611993,VR Realizes the Cyberspace Metaphor,dryadin,15,15,Science,2026-04-05 15:44:50
+47633855,Claude Code Found a Linux Vulnerability Hidden for 23 Years,eichin,402,253,Technology,2026-04-05 15:44:50
+47636435,Emotion concepts and their function in a large language model,dnw,180,181,Worldnews,2026-04-05 15:44:51
+47644726,"Power-washing, pool-cleaning and mowing – playing games about mundane jobs",andsoitis,16,3,Worldnews,2026-04-05 15:44:52
+47639727,"When legal sports betting surges, so do Americans' financial problems",pseudolus,210,137,Sports,2026-04-05 15:44:52
+47637287,Some Unusual Trees,simplegeek,282,85,Worldnews,2026-04-05 15:44:52
+47645235,Brain scans reveal how to enters a psychedelic-like trance without drugs,ingenika,70,21,Technology,2026-04-05 15:44:53
+47645817,How Pope Leo is pushing back on divine justification of war,1659447091,51,32,Worldnews,2026-04-05 15:44:54
+47641788,Iranian missile blitz takes down AWS data centers in Bahrain and Dubai,lschueller,173,152,Technology,2026-04-05 15:44:54
+47639567,Show HN: TurboQuant-WASM – Google's vector quantization in the browser,teamchong,157,6,Entertainment,2026-04-05 15:44:55
+47625952,Show HN: I built a frontpage for personal blogs,ramkarthikk,763,191,Entertainment,2026-04-05 15:44:55
+47641464,Scientists observe an immune signaling complex forming inside cells,ohjeez,112,7,Worldnews,2026-04-05 15:44:56
+47621792,Post Mortem: axios NPM supply chain compromise,JeanMeche,283,135,Technology,2026-04-05 15:44:57
+47624645,Show HN: Apfel – The free AI already on your Mac,franze,721,147,Technology,2026-04-05 15:45:00
+47604698,Functional programming accelerates agentic feature development,cyrusradfar,52,27,Worldnews,2026-04-05 15:45:02
+47603657,Artemis II Launch Day Updates,apitman,1093,951,Worldnews,2026-04-05 15:45:03
+47633947,The FAA’s flight restriction for drones is an attempt to criminalize filming ICE,detaro,536,182,Entertainment,2026-04-05 15:45:06
+47642275,"Netflix must refund customers for years of price hikes, Italian court rules",xbmcuser,59,6,Worldnews,2026-04-05 15:45:06
+47633676,"Extra usage credit for Pro, Max, and Team plans",angst,64,61,Sports,2026-04-05 15:45:07
+47629485,A case study in testing with 100+ Claude agents in parallel,thejash,54,48,Science,2026-04-05 15:45:13
+47615002,Qwen3.6-Plus: Towards real world agents,pretext,587,208,Worldnews,2026-04-05 15:45:15
+47609564,Steam on Linux Use Skyrocketed Above 5% in March,hkmaxpro,781,365,Sports,2026-04-05 15:45:19
+47626598,Show HN: ctx – an Agentic Development Environment (ADE),luca-ctx,50,52,Entertainment,2026-04-05 15:45:20
+47640770,Show HN: DocMason – Agent Knowledge Base for local complex office files,Jet_Xu,8,0,Entertainment,2026-04-05 15:45:21
+47630109,Firm boosts H.264 streaming license fees from $100k up to staggering $4.5M,MaximilianEmel,190,75,Entertainment,2026-04-05 15:45:22
+47638532,"Show HN: Ownscribe – local meeting transcription, summarization and search",paberr,12,0,Entertainment,2026-04-05 15:45:24
+47646241,Applying machine learning to identify unrecognized Covid-19 deaths in the US,Pxtl,11,7,Worldnews,2026-04-05 15:45:25
+47645926,The Spaceballs sequel will be released in April next year,WaitWaitWha,7,0,Science,2026-04-05 15:45:26
+47643637,Show HN: Dev Personality Test,4m1rk,6,3,Entertainment,2026-04-05 15:45:26
+47646553,The SimCity Planning Commission Handbook (2024),Tomte,5,0,Entertainment,2026-04-05 15:45:28
+47606560,"Show HN: Dull – Instagram Without Reels, YouTube Without Shorts (iOS)",kasparnoor,152,117,Entertainment,2026-04-05 15:45:29
+47637580,Emotion Concepts and Their Function in a Large Language Model,Anon84,16,0,Worldnews,2026-04-05 15:45:29
+47621438,Show HN: Made a little Artemis II tracker,codingmoh,151,57,Entertainment,2026-04-05 15:45:31
+47632692,Show HN: Mtproto.zig – High-performance Telegram proxy with DPI evasion,slp3r,21,14,Entertainment,2026-04-05 15:45:33
+47611721,IBM Announces Strategic Collaboration with Arm,bonzini,281,191,Worldnews,2026-04-05 15:45:34
+47631030,Show HN: Ismcpdead.com – Live dashboard tracking MCP adoption and sentiment,sagirodin,35,23,Entertainment,2026-04-05 15:45:35
+47604155,SpaceX files to go public,nutjob2,397,574,Science,2026-04-05 15:45:36
+47615756,Renewables reached nearly 50% of global electricity capacity last year,Growtika,295,148,Worldnews,2026-04-05 15:45:37
+47645240,SpaceX Pushes Back Crucial Starship Test Launch,bookmtn,12,8,Worldnews,2026-04-05 15:45:38
+47612601,"Sweden goes back to basics, swapping screens for books in the classroom",novaRom,898,432,Entertainment,2026-04-05 15:45:50
+47648177,China Edges Past U.S. in Global Approval Ratings,KnuthIsGod,5,0,Worldnews,2026-04-05 15:45:51
+47612277,Almighty Lisp: Lisp and Emacs Essentials Book,nemoniac,75,4,Entertainment,2026-04-05 15:45:52
+47589856,Show HN: Postgres extension for BM25 relevance-ranked full-text search,tjgreen,202,56,Entertainment,2026-04-05 15:45:53
+47645095,Evacuation of U.S. troops from Mideast base sends community groups scrambling,ceejayoz,40,16,Worldnews,2026-04-05 15:45:54
+47645717,Explore union types in C# 15,0x00C0FFEE,11,1,Worldnews,2026-04-05 15:45:54
+47631648,Automatic Textbook Formalization,tzury,43,17,Entertainment,2026-04-05 15:45:57
+47612321,Show HN: I built a DNS resolver from scratch in Rust – no DNS libraries,rdme,113,65,Entertainment,2026-04-05 15:45:57
+47615844,Show HN: A P2P messenger with dual network modes (Fast and Tor),Realman78,39,22,Entertainment,2026-04-05 15:46:01
+47588349,GitHub Monaspace Case Study,homebrewer,146,50,Science,2026-04-05 15:46:10
+47607394,SolveSpace (open source 2D/3D CAD) working on Windows 2000 (2025),ruevs,40,6,Science,2026-04-05 15:46:14
+47624879,Switzerland hosts 'CERN of semiconductor research',teleforce,34,6,Science,2026-04-05 15:46:52
+47609883,"Salomi, a research repo on extreme low-bit transformer quantization",Edward9055,12,4,Science,2026-04-05 15:47:10
+47609725,Show HN: NASA Artemis II Mission Timeline Tracker,AustinDev,93,17,Science,2026-04-05 15:47:15

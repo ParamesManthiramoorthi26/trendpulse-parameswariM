@@ -7,10 +7,12 @@
 # import Required Library
 import pandas as pd
 import json
+import os
+from datetime import datetime 
 
 # Load the JSON File
 
-with open ("data/trends_20260405.json" , "r",encoding="utf-8") as f :
+with open ("data/trends_latest.json" , "r",encoding="utf-8") as f :
   post_list = json.load(f)
 story_list = pd.DataFrame(post_list)
 story_list
@@ -61,14 +63,19 @@ print(high_quality_story_list['category'].value_counts())
 
 """### 3 — Save as CSV"""
 
-import os
-
+# -----------------------------
 # Create folder if it doesn't exist
 os.makedirs("data", exist_ok=True)
 
-# Save the dataframe to CSV with current date in the filename
-filename = f"data/story_list_clean_{pd.Timestamp.now().strftime('%Y%m%d_%H%M%S')}.csv"
+# Save timestamped CSV (history)
+timestamp = pd.Timestamp.now().strftime('%Y%m%d_%H%M%S')
+filename = f"data/story_list_clean_{timestamp}.csv"
 high_quality_story_list.to_csv(filename, index=False)
 
-print(f" {filename}  : saved successfully as CSV  ")
+# Also save/update a fixed 'latest' CSV for pipeline
+latest_file = "data/story_list_clean_latest.csv"
+high_quality_story_list.to_csv(latest_file, index=False)
 
+# -----------------------------
+print(f"{filename} : saved successfully as CSV (history)")
+print(f"{latest_file} : updated successfully for pipeline")
